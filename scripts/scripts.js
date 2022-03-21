@@ -1,30 +1,33 @@
 // 1, 5 , 10, 25 , 50 , 100 , 1000
 const chips = [1,5,10,25,50,100,1000];
 
+// populates user field if over max
 function imposeMinMax(el){
-    if(el.value != ""){
-      if(parseInt(el.value) < parseInt(el.min)){
-        el.value = el.min;
-      }
-      if(parseInt(el.value) > parseInt(el.max)){
-        el.value = el.max;
-      }
+  if(el.value != ""){
+    if(parseInt(el.value) < parseInt(el.min)){
+      el.value = el.min;
+    }
+    if(parseInt(el.value) > parseInt(el.max)){
+      el.value = el.max;
     }
   }
- 
+}
 
-  function getValue(){
-    var outputDisplay = document.getElementById('bankDisplay');
-    var bankInput = document.getElementById('bankInput').value;
-    var a = +bankInput;
-    outputDisplay.innerHTML=a;
-    } 
-// function addBank() {
-//     var output = document.getElementById('bankDisplay');
-//     var userInput = document.getElementById('deposit').value;
-//     var displayBank = +userInput;
-//     output.innerHTML=+displayBank;
-// }
+
+function addBank(){
+  var outputDisplay = document.getElementById('bankDisplay');
+  var bankInput = document.getElementById('bankInput').value;
+  var a = +bankInput;
+  outputDisplay.innerHTML=a;
+  }
+   
+// need to generate an error if user tries to add bank that is not divisible by 5  
+function errorBank() {
+  
+}
+
+
+
 
 
 

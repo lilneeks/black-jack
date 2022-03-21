@@ -10,44 +10,19 @@
 <body>
     <h1>BlackJack</h1>
 
-    <input id="deposit" type="number" min="0" step="5" max ="500" onkeyup=imposeMinMax(this) placeholder=" "/>
+    <input id="bankInput" type="number" min="0" step="5" max ="500" onkeyup=imposeMinMax(this) placeholder="Deposit" value=" "/>
 
     <div class="prompt">
       <p class="confirm">$500 Limit</p>
       <p class="error">Only increments of $5 pls</p>
     </div>
 
-    <!-- <input id="user-wager" type="number" min="5" step="5" onkeyup=imposeMinMax(this) placeholder="Wager"> -->
-    <!-- <div class="bank"> -->
-      <!-- <h2>Chips: <p id="bankDisplay"></p> </h2> -->
-    <!-- </div> -->
+    <button onclick="addBank()">Deposit</button>
 
-
-    <!-- Buttons Before In play
-    <button type="button">GAME!</button>
-    <button type="button">ALL IN BABY</button> -->
-
-
-<!-- // once in the game -->
-    <!-- <button type="button">Hit</button>
-    <button type="button">Stand</button> -->
-    
-<input type="number" min="0" step="5" max ="500" onkeyup=imposeMinMax(this) placeholder=" " id="bankInput" value="" /><br/>
-
-<button onclick="getValue()">Deposit</button>
-
-
-
-
-<!-- <div class="prompt2">
-  <p class="confirm">A</p>
-  <p class="error">B</p>
-</div> -->
-
-<h2>Bank: </h2>
-<p id="bankDisplay"></p>
-
-
+  <div class="bankRoll">
+    <h2>Bank: </h2>
+      <p id="bankDisplay"></p>
+  </div>
 
 </body>
 </html>
