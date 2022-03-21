@@ -23,18 +23,30 @@ function addBank(){
    
 // need to generate an error if user tries to add bank that is not divisible by 5  
 
-const bank = [];
-// Maybe loop is not needed? try just if else statment 
+// const bank = [];
+// function bankError(num) {
+//   for(var i = 0; i <= num; i++) {
+//       if(i % 5 === 0)bank.push("Yes");
+//       else bank.push(false);
+//   }
+//   return bank;
+// }
+
+
+
 function bankError(num) {
-  for(var i = 0; i <= num; i++) {
-      if(i % 5 === 0)bank.push("Yes");
-      else bank.push(i)
+  let result;
+  if (a % 5 === 0) {
+    result = num;
+  } else {
+    result = 'Invalid amount';
   }
-  return bank;
+  return result;
 }
 
+console.log(testFunc(11));
+// expected output: "NOT positive"
 
-console.log(bankError(9));
 
 // $(document).ready(function() {
 //   $("#form").submit(function(event) {
