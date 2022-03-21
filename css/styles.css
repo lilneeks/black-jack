@@ -11,20 +11,25 @@ border-color: red;
 
 } */
 
-.prompt{
-display:none;
-}
-
-input:invalid{
-background:red;
-}
-
-input:valid{
-background:green;
-}
-
-input:invalid + p.error {
-display:block;
-}
+/* .prompt{
+display: none;
+} */
 
 
+
+.confirm, .error {
+    display: none;
+  }
+  
+  input:invalid {
+    border-color: red;
+  }
+  
+  input:valid {
+    border-color: green;
+  }
+  
+  input:invalid+.prompt>p.error,
+  input:valid+.prompt>p.confirm{
+    display: block;
+  }
