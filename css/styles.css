@@ -1,0 +1,55 @@
+/* :invalid {
+    background: red;
+  } */
+
+
+.confirm{
+    display:none;
+}
+
+
+input:invalid{
+    background:red;
+}
+
+input:invalid + .confirm {
+    display:block;
+}  
+
+.error{
+    display:none;
+}
+
+
+input:invalid{
+    background:red;
+}
+
+input:invalid + .error {
+    display:block;
+}  
+    
+
+/* .confirm{
+
+    color: blueviolet;
+    
+} */
+
+
+
+
+
+
+
+
+input:not(:placeholder-shown) {
+    border-color: green;
+    }
+    
+    input:placeholder-shown {
+    border-color: red;
+
+
+    
+    }

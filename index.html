@@ -15,10 +15,22 @@
       </head>
 <body>
     <h1>BlackJack</h1>
-    <label for="user-inputNum"> Deposit: </label>
-    <input id="user-inputNum" class="form-control" type="number" min="1" step="5" max ="25000" onkeyup=imposeMinMax(this)>
-    <input id="user-inputNum" class="form-control" type="number" min="1" step="5" max ="25000" onkeyup=imposeMinMax(this)>
+    <label for="user-inputNum"> <button type="button" data-id="deposit">Deposit</button></label>
 
+    <input data-id="user-deposit" type="number" min="0" step="5" max ="100" onkeyup=imposeMinMax(this) placeholder=" ">
+    
+    <div class="confirm">
+      <p>Are you sure you want to deposit?</p>
+  </div>
+
+
+    <div class="error">
+      <p>Incriments of 5 pls (Max Deposit is $100)</p>
+  </div>
+
+    <!-- <input id="user-wager" type="number" min="5" step="5" onkeyup=imposeMinMax(this) placeholder="Wager"> -->
+
+    <h2>Bank: </h2>
     <!-- Buttons Before In play
     <button type="button">GAME!</button>
     <button type="button">ALL IN BABY</button> -->

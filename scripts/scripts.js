@@ -1,12 +1,30 @@
 // 1, 5 , 10, 25 , 50 , 100 , 1000
 const chips = [1,5,10,25,50,100,1000];
-console.log(chips);
 
-function giveChips(chips){
 
+
+
+
+let bank = [];
+
+
+function bankValue()
+{
+    var str = document.getElementById("deposit").value;
+    alert(str);
 }
 
-giveChips();
+
+// // this was old way of showing error if not divisible by 5
+// const inputs = document.querySelectorAll('input[data-id="user-deposit"]');
+// inputs.forEach(input => {
+//   input.addEventListener('change', () => {
+//     if (input.value % 5 !== 0) {
+//       alert('not valid');
+//       input.value = 5;
+//     }
+//   });
+// });
 
 
 
