@@ -21,31 +21,25 @@ function addBank(){
   outputDisplay.innerHTML=display;
   }
    
-// need to generate an error if user tries to add bank that is not divisible by 5  
-
-// const bank = [];
-// function bankError(num) {
-//   for(var i = 0; i <= num; i++) {
-//       if(i % 5 === 0)bank.push("Yes");
-//       else bank.push(false);
-//   }
-//   return bank;
-// }
-
 
 
 function bankError(num) {
   let result;
-  if (a % 5 === 0) {
-    result = num;
+  if (num % 5 === 0) {
+    result = +num;
   } else {
-    result = 'Invalid amount';
+    result = 'Invalid amount try again';
   }
   return result;
 }
 
-console.log(testFunc(11));
-// expected output: "NOT positive"
+
+
+
+
+
+// console.log(bankError(10));
+
 
 
 // $(document).ready(function() {
@@ -53,9 +47,11 @@ console.log(testFunc(11));
 //     event.preventDefault();
 //     var userNumber = $("input#bankInput").val();
 //     var result = bankError(userNumber);
-//     $("#bankDisplay").text(result);
+//     $("#bankDisplay").number(result);
 //   });
 // });
+
+
 
 
 
