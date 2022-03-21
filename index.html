@@ -10,14 +10,12 @@
 <body>
     <h1>BlackJack</h1>
 
-    <!-- <label for="depositForm"> <button oneclick="addBank()" type="button" id="deposit">Deposit</button> </label>
+    <input id="deposit" type="number" min="0" step="5" max ="500" onkeyup=imposeMinMax(this) placeholder=" "/>
 
-    <input id="deposit" type="number" min="0" step="5" max ="500" onkeyup=imposeMinMax(this) placeholder=" ">
-  
     <div class="prompt">
       <p class="confirm">$500 Limit</p>
       <p class="error">Only increments of $5 pls</p>
-    </div> -->
+    </div>
 
     <!-- <input id="user-wager" type="number" min="5" step="5" onkeyup=imposeMinMax(this) placeholder="Wager"> -->
     <!-- <div class="bank"> -->
@@ -35,17 +33,19 @@
     <button type="button">Stand</button> -->
     
 <input type="number" min="0" step="5" max ="500" onkeyup=imposeMinMax(this) placeholder=" " id="bankInput" value="" /><br/>
-<button onclick="getValue()">Add Numbers</button>
-<h2>bank: </h2>
+
+<button onclick="getValue()">Deposit</button>
+
+
+
+
+<!-- <div class="prompt2">
+  <p class="confirm">A</p>
+  <p class="error">B</p>
+</div> -->
+
+<h2>Bank: </h2>
 <p id="bankDisplay"></p>
-    <script>
-      function getValue(){
-      var outputDisplay = document.getElementById('bankDisplay');
-      var bankInput = document.getElementById('bankInput').value;
-      var a = +bankInput;
-      outputDisplay.innerHTML=a;
-      } 
-     </script>
 
 
 

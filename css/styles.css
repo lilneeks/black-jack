@@ -16,6 +16,23 @@ display: none;
 } */
 
 
+.confirm, .error {
+  display: none;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:invalid+.prompt2>p.error,
+input:valid+.prompt2>p.confirm{
+  display: block;
+}
+
 
 .confirm, .error {
     display: none;
@@ -33,3 +50,4 @@ display: none;
   input:valid+.prompt>p.confirm{
     display: block;
   }
+

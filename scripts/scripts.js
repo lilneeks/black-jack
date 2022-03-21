@@ -13,6 +13,12 @@ function imposeMinMax(el){
   }
  
 
+  function getValue(){
+    var outputDisplay = document.getElementById('bankDisplay');
+    var bankInput = document.getElementById('bankInput').value;
+    var a = +bankInput;
+    outputDisplay.innerHTML=a;
+    } 
 // function addBank() {
 //     var output = document.getElementById('bankDisplay');
 //     var userInput = document.getElementById('deposit').value;
