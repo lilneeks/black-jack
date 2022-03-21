@@ -2,54 +2,29 @@
     background: red;
   } */
 
-
-.confirm{
-    display:none;
+/* input:not(:placeholder-shown) {
+border-color: green;
 }
 
+input:placeholder-shown {
+border-color: red;
 
-input:invalid{
-    background:red;
-}
-
-input:invalid + .confirm {
-    display:block;
-}  
-
-.error{
-    display:none;
-}
-
-
-input:invalid{
-    background:red;
-}
-
-input:invalid + .error {
-    display:block;
-}  
-    
-
-/* .confirm{
-
-    color: blueviolet;
-    
 } */
 
+.prompt{
+display:none;
+}
+
+input:invalid{
+background:red;
+}
+
+input:valid{
+background:green;
+}
+
+input:invalid + p.error {
+display:block;
+}
 
 
-
-
-
-
-
-input:not(:placeholder-shown) {
-    border-color: green;
-    }
-    
-    input:placeholder-shown {
-    border-color: red;
-
-
-    
-    }

@@ -17,15 +17,11 @@
     <h1>BlackJack</h1>
     <label for="user-inputNum"> <button type="button" data-id="deposit">Deposit</button></label>
 
-    <input data-id="user-deposit" type="number" min="0" step="5" max ="100" onkeyup=imposeMinMax(this) placeholder=" ">
+    <input data-id="user-deposit" type="number" min="5" step="5" max ="900000" onkeyup=imposeMinMax(this) placeholder=" ">
     
-    <div class="confirm">
-      <p>Are you sure you want to deposit?</p>
-  </div>
-
-
-    <div class="error">
-      <p>Incriments of 5 pls (Max Deposit is $100)</p>
+    <div class="prompt">
+      <p class="confirm"> A </p>
+      <p class="error"> B  </p>
   </div>
 
     <!-- <input id="user-wager" type="number" min="5" step="5" onkeyup=imposeMinMax(this) placeholder="Wager"> -->

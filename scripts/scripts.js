@@ -5,14 +5,14 @@ const chips = [1,5,10,25,50,100,1000];
 
 
 
-let bank = [];
+// let bank = [];
 
 
-function bankValue()
-{
-    var str = document.getElementById("deposit").value;
-    alert(str);
-}
+// function bankValue()
+// {
+//     var str = document.getElementById("deposit").value;
+//     alert(str);
+// }
 
 
 // // this was old way of showing error if not divisible by 5
