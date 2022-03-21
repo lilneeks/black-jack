@@ -10,18 +10,19 @@
 <body>
     <h1>BlackJack</h1>
 
-    <input id="bankInput" type="number" min="0" step="5" max ="500" onkeyup=imposeMinMax(this) placeholder="Deposit" value=" "/>
+      <input id="bankInput" type="number" min="0" step="5" max ="500" onkeyup=imposeMinMax(this) value=""/>
 
-    <div class="prompt">
-      <p class="confirm">$500 Limit</p>
-      <p class="error">Only increments of $5 pls</p>
-    </div>
+      <div class="prompt">
+        <p class="confirm">$500 Limit</p>
+        <p class="error">Only increments of $5 pls</p>
 
-    <button onclick="addBank()">Deposit</button>
 
+      <button onclick="addBank()">Deposit</button>
+    </form>
+
+    <!-- need to figure out how to append $ symbol -->
   <div class="bankRoll">
-    <h2>Bank: </h2>
-      <p id="bankDisplay"></p>
+    <h2>Bank:<p id="bankDisplay"></p> </h2>
   </div>
 
 </body>
